@@ -1,0 +1,16 @@
+{
+  "name": "resera",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && bun build ./worker/index.js --outdir ./dist/server --target browser --format esm",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "svelte": "^5.39.5",
+    "vite": "^7.1.5"
+  }
+}
