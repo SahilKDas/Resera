@@ -3,6 +3,7 @@
 
   let menuOpen = false;
   let navScrolled = false;
+  const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 
   const fields = [
     { number: '01', title: 'Natural Sciences', text: 'From living systems to the physics shaping our universe.' },
@@ -48,7 +49,7 @@
 
 <header class:scrolled={navScrolled}>
   <a class="brand" href="#home" aria-label="RESERA home" on:click={closeMenu}>
-    <img src="/resera-logo.png" alt="" />
+    <img src={asset('resera-logo.png')} alt="" />
     <span>RESERA</span>
   </a>
 
@@ -179,7 +180,7 @@
 
 <footer>
   <a class="brand footer-brand" href="#home" aria-label="RESERA home">
-    <img src="/resera-logo.png" alt="" />
+    <img src={asset('resera-logo.png')} alt="" />
     <span>RESERA</span>
   </a>
   <p>Student-led. Curiosity-driven.<br />Built for discovery.</p>
