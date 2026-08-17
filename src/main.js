@@ -1,4 +1,5 @@
 import './styles.css';
+import './auth.css';
 import App from './App.svelte';
 import { mount } from 'svelte';
 
